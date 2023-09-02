@@ -1,0 +1,437 @@
+/* gig-edit-create-form*/
+
+.gig-edit-create-form {
+    padding: 30px 0px;
+}
+
+/* create-gig-input */
+.gig-edit-create-form .create-gig-input {
+    padding: 20px 40px;
+}
+
+.gig-edit-create-form .create-gig-input .required::after {
+    content: " *";
+    color: red;
+    font-size: 1.3rem;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group {
+    padding: 20px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+    border-radius: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label {
+    width: 30%;
+    border: 1px solid gray;
+    padding: 6px 9px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-heading {
+    font-size: 1.3rem;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-para {
+    margin-top: 5px;
+    border: 1px solid gray;
+    padding: 6px 8px;
+}
+
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .gig-title-area {
+    border: 1px solid gray;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    resize: none;
+    border-radius: 6px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .chars-count {
+    text-align: end;
+    margin-top: 5px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input {
+    padding: 20px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .gig-packages-input-heading .packages-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-name .package-name-area {
+    border: 1px solid gray;
+    width: 100%;
+    height: 12dvh;
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: none;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe .package-describe-area {
+    border: 1px solid gray;
+    width: 100%;
+    height: 20dvh;
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: none;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time .delivery-time-inner {
+    border: 1px solid gray;
+    padding: 8px 6px;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section {
+    border: 1px solid gray;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .price-heading {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input {
+    display: flex;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+    font-size: 1.1rem;
+    padding: 6px 8px;
+    border: 1px solid gray;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper {
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 30px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .gallery-item-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img-heading {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed gray;
+    padding: 18px 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img:hover {
+    border: 1px dashed #446ee7;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-icon {
+    width: 25%;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-icon .gallery-icon-inner {
+    display: flex;
+    width: 100%;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-text {
+    color: gray;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file {
+    color: #446ee7;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file .input-browse {
+    display: none;
+}
+
+.gig-edit-create-form .create-gig-input .publish {
+    margin-top: 20px;
+}
+
+.gig-edit-create-form .create-gig-input .publish .publish-btn {
+    border: 1px solid gray;
+    border-radius: 6px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px 0px;
+    cursor: pointer;
+    background-color: #014b70;
+}
+
+/* @Media querys */
+@media only screen and (max-width: 1024px) {
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container {
+        flex-direction: column;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label {
+        width: 100%;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input {
+        width: 100%;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .gig-edit-create-form .create-gig-input .required::after {
+        font-size: 1.1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-heading {
+        font-size: 1.5rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-heading {
+        font-size: 1.1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .gig-title-area {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .gig-packages-input-heading .packages-heading {
+        font-size: 1.5rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-name .package-name-area {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe .package-describe-area {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time .delivery-time-inner {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .price-heading {
+        font-size: 1.3rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+        font-size: 1.3rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .gallery-item-heading {
+        font-size: 1.5rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img-heading {
+        font-size: 1.1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .publish .publish-btn {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .gig-edit-create-form .create-gig-input {
+        padding: 10px 15px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group {
+        padding: 20px 15px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input {
+        padding: 20px 15px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section {
+        width: 95%;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img {
+        width: 100%;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-icon {
+        width: 40%;
+    }
+
+    .gig-edit-create-form .create-gig-input .required::after {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-heading {
+        font-size: 1.2rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-heading {
+        font-size: 1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .gig-title-area {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .gig-packages-input-heading .packages-heading {
+        font-size: 1.2rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-name .package-name-area {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe .package-describe-area {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time .delivery-time-inner {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .price-heading {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .gallery-item-heading {
+        font-size: 1.2rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img-heading {
+        font-size: 1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .publish .publish-btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+        padding: 6px 3px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section {
+        width: 100%;
+        padding: 6px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+        padding-right: 5px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input {
+        padding: 20px 8px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group {
+        padding: 20px 8px;
+    }
+}

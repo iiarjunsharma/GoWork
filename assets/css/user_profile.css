@@ -1,0 +1,1173 @@
+/* user-account */
+
+main {
+    width: 100%;
+    padding: 60px 40px 40px 40px;
+}
+
+main .user-account-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .user-account-container .user-profile {
+    width: 33%;
+    height: fit-content;
+}
+
+main .user-account-container .user-profile .user-profile-info {
+    padding: 30px 20px 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 35px;
+    border-radius: 17px;
+    width: 100%;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-dp {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-dp span {
+
+    width: 150px;
+    height: 150px;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-dp span img {
+
+    width: 100%;
+    height: 100%;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-profile-label {
+
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-profile-label .users-name {
+    margin: auto;
+    font-size: 1rem;
+}
+
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper {
+    display: flex;
+    padding: 7px 0px;
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper .edit-btn {
+    background-color: #014b70;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 14px 0px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper .edit-btn .edit-btn-inner {
+    color: white;
+    font-size: 1.3rem;
+}
+
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper .contact-btn {
+    background-color: #014b70;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 14px 0px;
+    border-radius: 6px;
+    margin-top: 18px;
+    text-decoration: none;
+}
+
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper .contact-btn .contact-btn-inner {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* show profile chat btn */
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper {
+    display: flex;
+    padding: 7px 0px;
+    margin: 10px 0px;
+}
+
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper .chat-btn {
+    background-color: #014b70;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 14px 0px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+main .user-account-container .user-profile .user-profile-info .buttons-wrapper .chat-btn .chat-btn-inner {
+    color: white;
+    font-size: 1.3rem;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-stats-desc {
+    border-top: 1px solid #dadbdd;
+    margin-top: 24px;
+    padding-top: 15px;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-stats-desc ul {
+    display: flex;
+    flex-direction: column;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-stats-desc ul li {
+    list-style: none;
+    padding: 8px 0px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .user-account-container .user-profile .user-profile-info .user-stats-desc ul li .text-style {
+    font-weight: bold;
+}
+
+main .user-account-container .user-profile .profile-info {
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 17px;
+
+}
+
+main .user-account-container .user-profile .profile-info .description {
+    border-bottom: 1px solid #dadbdd;
+}
+
+main .user-account-container .user-profile .profile-info .description h3 {
+    font-size: 1.6rem;
+}
+
+main .user-account-container .user-profile .profile-info .description p {
+    display: flex;
+    font-size: 1.1rem;
+    padding: 15px 0px;
+    text-align: start;
+    line-height: 30px;
+    word-break: break-word;
+}
+
+/* gigs */
+.seller-gigs {
+    width: 60%;
+}
+
+.seller-gigs .status_filter_bar {
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    background-color: #014b70;
+    color: white;
+}
+
+.seller-gigs .status_filter_bar .seller_gig_head {
+    font-size: 1.3rem;
+}
+
+.seller-gigs .gig-card-base {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.seller-gigs .gig-card-base .seller-gig-card {
+    width: 30%;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    color: black;
+}
+
+
+.seller-gigs .gig-card-base .seller-gig-card .gig-card-img {
+    height: 10rem;
+    width: 100%;
+}
+
+.seller-gigs .gig-card-base .seller-gig-card .gig-card-img .gig-card-img-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.seller-gigs .gig-card-base .seller-gig-card .gig-card-title {
+    display: flex;
+}
+
+.seller-gigs .gig-card-base .seller-gig-card .gig-card-title .gig-card-title-inner {
+    padding: 10px 9px;
+    font-size: 1rem;
+    word-break: break-all;
+}
+
+.seller-gigs .gig-card-base .add-new-gig {
+    width: 30%;
+    border: 1px solid gray;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    height: 14rem;
+}
+
+.seller-gigs .gig-card-base .add-new-gig .add-new-gig-icon {
+    margin: 60px auto 20px;
+    display: flex;
+    width: 40%;
+}
+
+.seller-gigs .gig-card-base .add-new-gig .add-new-gig-heading {
+    text-align: center;
+    color: black;
+}
+
+/* Edit Profile */
+.edit_pro_container {
+    padding: 40px 20px;
+}
+
+.edit_pro_container .display_name {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.edit_pro_container .display_name #show_display_name .name_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit_pro_container .display_name #show_display_name .name_head .name_heading {
+    font-size: 1.3rem;
+}
+
+.edit_pro_container .display_name #show_display_name .name_head .edit_name {
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #00698c;
+}
+
+.edit_pro_container .display_name #show_display_name .show_name {
+    margin-top: 9px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    display: flex;
+}
+
+.display_name #edit_display_name {
+    display: none;
+    line-height: 5dvh;
+}
+
+.edit_pro_container .display_name #edit_display_name .name_heading {
+    font-size: 1.3rem;
+}
+
+.edit_pro_container .display_name #edit_display_name .name_head {
+    font-size: 1rem;
+}
+
+.edit_pro_container .display_name #edit_display_name .name_input {
+    margin-top: 9px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+}
+
+.edit_pro_container .display_name #edit_display_name .name_foot {
+    margin-top: 9px;
+    font-size: 1rem;
+}
+
+.edit_pro_container .display_name #edit_display_name .name_btns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.edit_pro_container .display_name #edit_display_name .name_btns .name_cancel {
+    border: 1px solid gray;
+    padding: 13px 20px;
+    font-size: 1rem;
+    background-color: #efeff0;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.edit_pro_container .display_name #edit_display_name .name_btns .name_save {
+    margin-left: 22px;
+    font-size: 1rem;
+    padding: 15px 20px;
+    background-color: #014b70;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.edit_pro_container .description {
+    margin-top: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.edit_pro_container .description #show_description .desc_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit_pro_container .description .desc_heading {
+    font-size: 1.3rem;
+}
+
+.edit_pro_container .description #show_description .desc_head .edit_desc {
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #00698c;
+}
+
+.edit_pro_container .description #show_description .show_desc {
+    display: flex;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 9px;
+    word-break: break-word;
+}
+
+.edit_pro_container .description #edit_description {
+    display: none;
+}
+
+.edit_pro_container .description #edit_description .editing_desc {
+    height: 20dvh;
+    resize: none;
+    display: flex;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 9px;
+}
+
+.edit_pro_container .description #edit_description .desc_btns {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.edit_pro_container .description #edit_description .desc_btns .desc_cancel {
+    border: 1px solid gray;
+    padding: 13px 20px;
+    font-size: 1rem;
+    background-color: #efeff0;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.edit_pro_container .description #edit_description .desc_btns .desc_up {
+    margin-left: 22px;
+    font-size: 1rem;
+    padding: 0px 20px;
+    background-color: #014b70;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Update gigs */
+.gig-edit-create-form {
+    padding: 30px 0px;
+}
+
+/* create-gig-input */
+.gig-edit-create-form .create-gig-input {
+    padding: 20px 40px;
+}
+
+.gig-edit-create-form .create-gig-input .required::after {
+    content: " *";
+    color: red;
+    font-size: 1.3rem;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group {
+    padding: 20px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+    border-radius: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label {
+    width: 30%;
+    border: 1px solid gray;
+    padding: 6px 9px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-heading {
+    font-size: 1.3rem;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-para {
+    margin-top: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .gig-title-area {
+    border: 1px solid gray;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    resize: none;
+    border-radius: 6px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .chars-count {
+    text-align: end;
+    margin-top: 5px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input {
+    padding: 20px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .gig-packages-input-heading .packages-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-name .package-name-area {
+    border: 1px solid gray;
+    width: 100%;
+    height: 7dvh;
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: none;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe .package-describe-area {
+    border: 1px solid gray;
+    width: 100%;
+    height: 10dvh;
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: none;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time .delivery-time-inner {
+    border: 1px solid gray;
+    padding: 8px 6px;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section {
+    border: 1px solid gray;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .price-heading {
+    display: flex;
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input {
+    display: flex;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+    font-size: 1.1rem;
+    padding: 6px 8px;
+    border: 1px solid gray;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper {
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 30px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .gallery-item-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img-heading {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed gray;
+    padding: 30px 12px;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img:hover {
+    border: 1px dashed #446ee7;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-icon {
+    width: 25%;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-icon .gallery-icon-inner {
+    display: flex;
+    padding: 0px 0px 2px 0px;
+    width: 100%;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-text {
+    color: gray;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file {
+    color: #446ee7;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file .input-browse {
+    display: none;
+}
+
+.gig-edit-create-form .create-gig-input .update {
+    margin-top: 20px;
+}
+
+.gig-edit-create-form .create-gig-input .update .cancal-btn {
+    border-radius: 6px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    color: black;
+    padding: 10px 0px;
+    cursor: pointer;
+    background-color: #014b7036;
+    text-decoration: none;
+}
+
+.gig-edit-create-form .create-gig-input .update .update-btn {
+    border-radius: 6px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 12px;
+    padding: 10px 0px;
+    cursor: pointer;
+    background-color: #014b70;
+}
+
+/* @Media querys */
+@media only screen and (max-width: 1024px) {
+
+    .seller-gigs .gig-card-base .seller-gig-card {
+        width: 45%;
+    }
+
+    .seller-gigs .gig-card-base .add-new-gig {
+        width: 45%;
+        height: 42dvh;
+    }
+
+    .seller-gigs .gig-card-base .add-new-gig .add-new-gig-icon {
+        width: 32%;
+    }
+
+    main .user-account-container .user-profile {
+        width: 40%;
+    }
+
+    .seller-gigs {
+        width: 55%;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container {
+        flex-direction: column;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label {
+        width: 100%;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input {
+        width: 100%;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    main .user-account-container {
+        flex-direction: column;
+    }
+
+    main .user-account-container .user-profile {
+        width: 100%;
+        margin: 0;
+    }
+
+    .seller-gigs {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .user-profile-label .users-name {
+        font-size: 0.9rem;
+    }
+
+
+    main .user-account-container .user-profile .user-profile-info .buttons-wrapper .edit-btn .edit-btn-inner {
+        color: white;
+        font-size: 1rem;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .buttons-wrapper .contact-btn .contact-btn-inner {
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    main .user-account-container .user-profile .user-profile-info .user-stats-desc ul li {
+        font-size: 1rem;
+    }
+
+
+    main .user-account-container .user-profile .profile-info .description h3 {
+        font-size: 1.3rem;
+    }
+
+    main .user-account-container .user-profile .profile-info .description p {
+        font-size: 1rem;
+    }
+
+
+    .seller-gigs .status_filter_bar .seller_gig_head {
+        font-size: 1rem;
+    }
+
+    .seller-gigs .gig-card-base .seller-gig-card .gig-card-title .gig-card-title-inner {
+        font-size: 0.9rem;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .user-dp span {
+        width: 125px;
+        height: 125px;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .buttons-wrapper .chat-btn .chat-btn-inner {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .display_name {
+        width: 100%;
+    }
+
+    .edit_pro_container .display_name #show_display_name .name_head .name_heading {
+        font-size: 1.1rem;
+    }
+
+    .edit_pro_container .display_name #show_display_name .name_head .edit_name {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .display_name #show_display_name .show_name {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_heading {
+        font-size: 1.1rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_head {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_input {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_foot {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_btns .name_cancel {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_btns .name_save {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .description .desc_heading {
+        font-size: 1.1rem;
+    }
+
+    .edit_pro_container .description #show_description .desc_head .edit_desc {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .description #show_description .show_desc {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .description #edit_description .editing_desc {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .description #edit_description .desc_btns .desc_cancel {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .description #edit_description .desc_btns .desc_up {
+        font-size: 0.9rem;
+
+    }
+
+    .gig-edit-create-form .create-gig-input .required::after {
+        font-size: 1.1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-heading {
+        font-size: 1.5rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-heading {
+        font-size: 1.1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .gig-title-area {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .gig-packages-input-heading .packages-heading {
+        font-size: 1.5rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-name .package-name-area {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe .package-describe-area {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time .delivery-time-inner {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .price-heading {
+        font-size: 1.3rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+        font-size: 1.3rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .gallery-item-heading {
+        font-size: 1.5rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img-heading {
+        font-size: 1.1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file {
+        font-size: 1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .update .cancal-btn {
+        font-size: 1.2rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .update .update-btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .seller-gigs .gig-card-base .seller-gig-card {
+        width: 90%;
+        margin: 20px auto 0px auto;
+    }
+
+    .seller-gigs .gig-card-base .add-new-gig {
+        width: 90%;
+        margin: 20px auto 0px auto;
+        height: 40dvh;
+    }
+
+    .seller-gigs {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .user-profile-label .users-name {
+        font-size: 0.7rem;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .buttons-wrapper .edit-btn .edit-btn-inner {
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .buttons-wrapper .contact-btn .contact-btn-inner {
+        color: white;
+        font-size: 0.9rem;
+    }
+
+
+    main .user-account-container .user-profile .user-profile-info .user-stats-desc ul li {
+        font-size: 0.9rem;
+    }
+
+    main .user-account-container .user-profile .profile-info .description h3 {
+        font-size: 1rem;
+    }
+
+    main .user-account-container .user-profile .profile-info .description p {
+        font-size: 0.9rem;
+    }
+
+
+    .seller-gigs .status_filter_bar .seller_gig_head {
+        font-size: 0.9rem;
+    }
+
+    .seller-gigs .gig-card-base .seller-gig-card .gig-card-title .gig-card-title-inner {
+        font-size: 0.7rem;
+    }
+
+    main {
+        padding: 30px 20px 30px 20px;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .buttons-wrapper .chat-btn .chat-btn-inner {
+        font-size: 0.9rem;
+    }
+
+    .seller-gigs .gig-card-base .add-new-gig .add-new-gig-icon {
+        width: 25%;
+    }
+
+    .edit_pro_container {
+        padding: 30px 12px;
+    }
+
+    .edit_pro_container .display_name {
+        padding: 15px 15px;
+    }
+
+    .edit_pro_container .description {
+        padding: 15px 15px;
+    }
+
+    .edit_pro_container .display_name #show_display_name .name_head .name_heading {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .display_name #show_display_name .name_head .edit_name {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .display_name #show_display_name .show_name {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_heading {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_head {
+        font-size: 0.8rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_input {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_foot {
+        font-size: 0.8rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_btns .name_cancel {
+        font-size: 0.8rem;
+    }
+
+    .edit_pro_container .display_name #edit_display_name .name_btns .name_save {
+        font-size: 0.8rem;
+    }
+
+    .edit_pro_container .description .desc_heading {
+        font-size: 1rem;
+    }
+
+    .edit_pro_container .description #show_description .desc_head .edit_desc {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .description #show_description .show_desc {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .description #edit_description .editing_desc {
+        font-size: 0.9rem;
+    }
+
+    .edit_pro_container .description #edit_description .desc_btns .desc_cancel {
+        font-size: 0.8rem;
+    }
+
+    .edit_pro_container .description #edit_description .desc_btns .desc_up {
+        font-size: 0.8rem;
+    }
+
+    .gig-edit-create-form .create-gig-input {
+        padding: 10px 15px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group {
+        padding: 20px 15px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input {
+        padding: 20px 15px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section {
+        width: 95%;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img {
+        width: 100%;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .gallery-icon {
+        width: 45%;
+    }
+
+    .gig-edit-create-form .create-gig-input .required::after {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-heading {
+        font-size: 1.2rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .input-label .title-heading {
+        font-size: 1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gig-title-group .gig-title-container .gig-title-input .gig-title-area {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .gig-packages-input-heading .packages-heading {
+        font-size: 1.2rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-name .package-name-area {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .package-describe .package-describe-area {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .delivery-time .delivery-time-inner {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .price-heading {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+        font-size: 0.9rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .gallery-item-heading {
+        font-size: 1.2rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img-heading {
+        font-size: 1rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .gallery-item-wrapper .upload-img .browse-file {
+        font-size: 0.9rem;
+    }
+
+
+    .gig-edit-create-form .create-gig-input .update .cancal-btn {
+        font-size: 1rem;
+    }
+
+    .gig-edit-create-form .create-gig-input .update .update-btn {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    main .user-account-container .user-profile .user-profile-info .user-dp span {
+        width: 100px;
+        height: 100px
+    }
+
+    main .user-account-container .user-profile .user-profile-info {
+        padding: 25px 10px 25px 10px;
+    }
+
+    main .user-account-container .user-profile .user-profile-info .user-stats-desc ul li {
+        font-size: 0.7rem;
+    }
+
+    .seller-gigs .gig-card-base .seller-gig-card .gig-card-img {
+        height: 8rem;
+    }
+
+    .edit_pro_container .display_name #show_display_name .name_head .edit_name {
+        padding-left: 20px;
+    }
+
+    .edit_pro_container .display_name #show_display_name .name_head .name_heading {
+        word-break: break-all;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-input {
+        padding: 6px 3px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section {
+        width: 100%;
+        padding: 6px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input .price-section .icon-price-input .price-icon {
+        padding-right: 5px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-pricing-input {
+        padding: 20px 8px;
+    }
+
+    .gig-edit-create-form .create-gig-input .gig-title-group {
+        padding: 20px 8px;
+    }
+}

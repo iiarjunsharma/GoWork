@@ -1,0 +1,538 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* NavBar */
+.navigation {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 15dvh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 15dvh;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+/* section 1  */
+.navbar .nav-bar {
+    display: flex;
+}
+
+.navbar .nav-bar #logo {
+    display: flex;
+    width: 100%;
+    height: 12dvh;
+}
+
+.navbar .nav-bar #logo #logo-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* 2 section */
+.navbar .nav {
+    display: flex;
+    width: 25%;
+}
+
+.navbar .nav .nav-listing {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar .nav .nav-listing li {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav .nav-listing li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #014b70;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.navbar .nav .nav-listing li a:hover {
+    color: white;
+    background-color: black;
+}
+
+.alert {
+    padding: 15px 18px;
+    font-size: 1.3rem;
+}
+
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+}
+
+/* Sign in */
+.sign-in-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 130px;
+    width: 100%;
+    align-items: center;
+}
+
+.sign-in-container section {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-container section .sign-in-inner {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}
+
+.sign-in-container section .sign-in-inner .inputs {
+    display: flex;
+    align-items: center;
+    width: 66%;
+    justify-content: space-between;
+}
+
+.sign-in-container section .sign-in-inner .inputs input {
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 15px;
+    width: 49%;
+    margin-top: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sign-in-container section .sign-in-inner .sub-up-btn {
+    width: 33%;
+}
+
+.sign-in-container section .sign-in-inner .sub-up-btn button {
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #014b70;
+    color: white;
+    width: 100%;
+    margin: 0;
+}
+
+.sign-in-container section .login-with-google {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.sign-in-container section .login-with-google .google-log {
+    padding: 15px 0px;
+    font-size: 1.3rem;
+    background-color: white;
+    color: #014b70;
+    width: 230px;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+/* Sing up */
+.sign-up-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 130px;
+    width: 100%;
+}
+
+.sign-up-container section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-container section .sign-up-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.sign-up-container section .sign-up-inner .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.sign-up-container section .sign-up-inner .inputs input {
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 15px;
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sign-up-container section .sign-up-inner button {
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 15px;
+    width: 100%;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: none;
+    background-color: #014b70;
+    color: white;
+}
+
+.sign-up-container section .sign-up-inner .user-name {
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px 0px;
+    background-color: #014b70;
+    margin: 10px 0px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.sign-up-container section .sign-up-inner .user-name input {
+    width: 80%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sign-up-container section .login-with-google {
+    margin: 4px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-container section .login-with-google .orDiv {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.sign-up-container section .login-with-google .google-log {
+    padding: 15px 0px;
+    font-size: 1.3rem;
+    background-color: white;
+    color: #014b70;
+    width: 230px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    justify-content: center;
+    display: flex;
+}
+
+/* Media Querys */
+
+@media only screen and (max-width: 1280px) {
+
+    /* Sign in */
+    .sign-in-container section .sign-in-inner {
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .sign-in-container section .sign-in-inner .sub-up-btn {
+        width: 100%;
+    }
+
+    .sign-in-container section {
+        width: 90%;
+    }
+
+    .sign-in-container section .sign-in-inner .sub-up-btn button {
+        margin: 30px 0px;
+    }
+
+    .sign-in-container section .sign-in-inner .inputs {
+        width: 100%;
+    }
+
+    .sign-in-container section .login-with-google {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* NavBar */
+    .navbar .nav {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    /* NavBar */
+    .navbar .nav {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* NavBar */
+    .navbar .nav .nav-listing li a {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+
+    .alert {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+
+    .navbar .nav-bar #logo {
+        height: 10dvh;
+    }
+
+    .navigation {
+        height: 13dvh;
+    }
+
+    .scroll_nav {
+        height: 13dvh;
+    }
+
+    /* Sign in */
+    .sign-in-container section .sign-in-inner .inputs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sign-in-container section .sign-in-inner .sub-up-btn button {
+        width: 100%;
+        margin: 20px 0px;
+        font-size: 1rem;
+    }
+
+    .sign-in-container section .sign-in-inner .inputs input {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .sign-in-container section .sign-in-inner .inputs .pass {
+        margin-top: 10px;
+    }
+
+    .sign-in-container section .login-with-google .google-log {
+        font-size: 1rem;
+        width: 200px;
+    }
+
+    /* Sing up */
+    .sign-up-container section .sign-up-inner .inputs input {
+        font-size: 1rem;
+    }
+
+    .sign-up-container section .sign-up-inner button {
+        font-size: 1rem;
+    }
+
+    .sign-up-container section .sign-up-inner .user-name input {
+        font-size: 1rem;
+    }
+
+    .sign-up-container section .login-with-google .orDiv {
+        font-size: 1rem;
+    }
+
+    .sign-up-container section .login-with-google .google-log {
+        font-size: 1rem;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* NavBar */
+    .navbar .nav .nav-listing li a {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .alert {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav-bar #logo {
+        height: 9dvh;
+    }
+
+    .navigation {
+        height: 12dvh;
+    }
+
+    .scroll_nav {
+        height: 12dvh;
+    }
+
+    .navbar .nav {
+        width: 35%;
+    }
+
+    /* Sign in */
+    .sign-in-container section .sign-in-inner .inputs input {
+        font-size: 0.9rem;
+    }
+
+    .sign-in-container section .sign-in-inner .sub-up-btn button {
+        font-size: 0.9rem;
+    }
+
+    .sign-in-container section .login-with-google .google-log {
+        font-size: 0.9rem;
+        width: 150px;
+    }
+
+    /* Sing up */
+    .sign-up-container section .sign-up-inner .inputs input {
+        font-size: 0.9rem;
+    }
+
+    .sign-up-container section .sign-up-inner button {
+        font-size: 0.9rem;
+    }
+
+    .sign-up-container section .sign-up-inner .user-name input {
+        font-size: 0.9rem;
+    }
+
+    .sign-up-container section .login-with-google .orDiv {
+        font-size: 0.9rem;
+    }
+
+    .sign-up-container section .login-with-google .google-log {
+        font-size: 0.9rem;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+
+    /* NavBar */
+    .navbar .nav {
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    /* NavBar */
+    .navbar .nav .nav-listing li a {
+        padding: 8px 8px;
+    }
+
+    .navbar .nav {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    /* NavBar */
+    .navbar .nav-bar #logo {
+        height: 7dvh;
+    }
+
+    .navbar .nav .nav-listing li a {
+        font-size: 0.7rem;
+        padding: 6px 6px;
+    }
+
+    .navbar .nav {
+        width: 42%;
+    }
+
+    .navigation {
+        height: 10dvh;
+    }
+
+    .scroll_nav {
+        height: 10dvh;
+    }
+
+    /* Sign in */
+    .sign-in-container section .login-with-google .google-log {
+        font-size: 0.7rem;
+        width: 120px;
+    }
+
+    /* Sing up */
+    .sign-up-container section .login-with-google .google-log {
+        font-size: 0.7rem;
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 225px) {
+
+    /* NavBar */
+    .navbar .nav {
+        width: 44%;
+    }
+
+    .navbar .nav .nav-listing li a {
+        padding: 6px 4px;
+    }
+}

@@ -1,0 +1,663 @@
+/* side scroll-bar */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+html ::-webkit-scrollbar {
+    width: 0px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: #014b70;
+}
+
+/* contact_container */
+
+/* side scroll-bar */
+.contact_container {
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    padding: 50px 25px 40px;
+    justify-content: space-between;
+}
+
+.contact_container ::-webkit-scrollbar {
+    width: 5px;
+}
+
+.contact_container ::-webkit-scrollbar-thumb {
+    background-color: #014b70;
+}
+
+/* contact_list */
+
+.contact_container .contact_list {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid #014b70;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* contact_list_head */
+
+.contact_container .contact_list .contact_list_head {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+.contact_container .contact_list .contact_list_head .chat_heading {
+    color: #014b70;
+    font-size: 1.6rem;
+}
+
+/* contact_list_inner */
+
+.contact_container .contact_list .contact_list_inner {
+    overflow-y: auto;
+    height: 100dvh;
+    border-top: 1px solid #014b70;
+}
+
+.contact_container .contact_list .contact_list_inner .no_chat {
+    height: 100%;
+    display: flex;
+}
+
+.contact_container .contact_list .contact_list_inner .no_chat .no_chat_heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #014b70;
+}
+
+.contact_container .contact_list .contact_list_inner .contact_lister {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 15px 8px;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #014b70;
+}
+
+/* lister_img */
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_img {
+    width: 13%;
+    display: flex;
+}
+
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_img .lister_img_inner {
+    width: 100%;
+}
+
+/* lister_section */
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_section {
+    width: 82%;
+    color: #014b70;
+}
+
+/* up_section */
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section .username {
+    font-size: 1.3rem;
+}
+
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section .chat_time {
+    font-size: 0.9rem;
+}
+
+/* down_section */
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_section .down_section {
+    display: flex;
+    padding-top: 10px;
+}
+
+.contact_container .contact_list .contact_list_inner .contact_lister .lister_section .down_section .chat_view {
+    font-size: 1rem;
+}
+
+/* contact_chat */
+.contact_container .contact_chat {
+    width: 58%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #014b70;
+    /* display: none; */
+}
+
+/* up_section */
+.contact_container .contact_chat .up_section {
+    display: flex;
+    padding: 10px;
+}
+
+.contact_container .contact_chat .up_section .lister_info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact_container .contact_chat .up_section .lister_info .lister_img {
+    width: 10%;
+    display: flex;
+}
+
+.contact_container .contact_chat .up_section .lister_info .lister_img .lister_img_inner {
+    width: 100%;
+}
+
+.contact_container .contact_chat .up_section .username {
+    font-size: 1.3rem;
+    width: 80%;
+    color: #014b70;
+}
+
+/* down_section */
+.contact_container .contact_chat .down_section {
+    border-top: 1px solid white;
+}
+
+.contact_container .contact_chat .down_section .chating_section {
+    overflow-y: auto;
+    padding: 20px 10px;
+    height: 100dvh;
+    border-bottom: 1px solid #014b70;
+    border-top: 1px solid #014b70;
+}
+
+/* sender_chat */
+
+.contact_container .contact_chat .down_section .chating_section .sender_chat {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+
+.contact_container .contact_chat .down_section .chating_section .sender_chat .sender_user_pic {
+    width: 5%;
+    display: flex;
+}
+
+
+.contact_container .contact_chat .down_section .chating_section .sender_chat .sender_user_pic .user_pic_inner {
+    width: 100%;
+}
+
+.contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info {
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
+    border: solid;
+    background-color: #014b70;
+    color: white;
+}
+
+.contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .username {
+    font-size: 1rem;
+}
+
+.contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .user_chat {
+    padding: 5px 10px;
+    word-break: break-word;
+    background-color: white;
+    color: black;
+    margin-top: 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .timestamp {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+
+/* receiver_chat */
+
+.contact_container .contact_chat .down_section .chating_section .receiver_chat {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_pic {
+    width: 5%;
+    display: flex;
+}
+
+
+.contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_pic .user_pic_inner {
+    width: 100%;
+}
+
+.contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info {
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
+    border: solid;
+    background-color: #014b70;
+    color: white;
+}
+
+.contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .username {
+    font-size: 1rem;
+}
+
+.contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .user_chat {
+    padding: 5px 10px;
+    word-break: break-word;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .timestamp {
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+.contact_container .contact_chat .down_section .chating_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 14px;
+}
+
+.contact_container .contact_chat .down_section .chating_footer .smiley {
+    display: flex;
+    width: 5%;
+    cursor: pointer;
+    align-items: center;
+}
+
+.contact_container .contact_chat .down_section .chating_footer .smiley .smiley_inner {
+    font-size: 2rem;
+    color: #014b70;
+}
+
+.contact_container .contact_chat .down_section .chating_footer .folder {
+    display: flex;
+    width: 5%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact_container .contact_chat .down_section .chating_footer .folder .folder_inner {
+    font-size: 2rem;
+    color: #014b70;
+
+}
+
+.contact_container .contact_chat .down_section .chating_footer .type_message_box {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contact_container .contact_chat .down_section .chating_footer .type_message_box .type_message {
+    padding: 15px 8px;
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 0px 15px;
+    border: 1px solid #014b70;
+}
+
+.contact_container .contact_chat .down_section .chating_footer .type_message_box .send_message {
+    font-size: 1rem;
+    padding: 0px 18px;
+    background-color: #014b70;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 0px;
+    cursor: pointer;
+}
+
+.contact_container .start_chat {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 1px solid #014b70;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact_container .start_chat .start_chat_inner {
+    padding-top: 10rem;
+}
+
+.contact_container .start_chat .start_chat_inner .logo {
+    background-color: #014b70;
+    width: 40%;
+    margin: auto;
+    display: flex;
+}
+
+.contact_container .start_chat .start_chat_inner .logo_inner {
+    width: 100%;
+}
+
+.contact_container .start_chat .start_chat_inner .info {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 35px 0px;
+    color: #014b70;
+}
+
+.contact_container .start_chat .styleing {
+    border-radius: 0px 0px 10px 10px;
+    background-color: #014b70;
+    padding: 5px 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .contact_container .contact_chat .up_section .close_arrow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact_container {
+        flex-direction: column;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_img {
+        width: 7%;
+        display: flex;
+    }
+
+    .contact_container .contact_list {
+        width: 100%;
+    }
+
+    .contact_container .contact_chat {
+        width: 100%;
+        display: none;
+    }
+
+    .contact_container .contact_chat .up_section {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact_container .contact_chat .up_section .lister_info {
+        width: 91%;
+    }
+
+    .contact_container .contact_chat .up_section .close_arrow {
+        font-size: 2rem;
+        color: #014b70;
+    }
+    .contact_container .start_chat {
+        width: 100%;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact_container .contact_chat .up_section .close_arrow {
+        font-size: 1.6rem;
+    }
+
+    .contact_container .contact_list .contact_list_head .chat_heading {
+        font-size: 1.3rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .no_chat .no_chat_heading {
+        font-size: 1.3rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section .username {
+        font-size: 1rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section .chat_time {
+        font-size: 0.8rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_section .down_section .chat_view {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_chat .up_section .username {
+        font-size: 1rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .username {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .user_chat {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .timestamp {
+        font-size: 0.7rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .username {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .user_chat {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .timestamp {
+        font-size: 0.7rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .smiley .smiley_inner {
+        font-size: 1.5rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .folder .folder_inner {
+        font-size: 1.5rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .type_message {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .send_message {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_img {
+        width: 55px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .send_message {
+        padding: 0px 11px;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer {
+        padding: 15px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact_container .contact_chat .up_section .close_arrow {
+        font-size: 1rem;
+    }
+
+    .contact_container .contact_list .contact_list_head .chat_heading {
+        font-size: 1rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .no_chat .no_chat_heading {
+        font-size: 1rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section .username {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section .chat_time {
+        font-size: 0.7rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_section .down_section .chat_view {
+        font-size: 0.8rem;
+    }
+
+    .contact_container .contact_chat .up_section .username {
+        font-size: 0.9rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .username {
+        font-size: 0.8rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .user_chat {
+        font-size: 0.8rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info .timestamp {
+        font-size: 0.6rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .username {
+        font-size: 0.8rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .user_chat {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info .timestamp {
+        font-size: 0.6rem;
+    }
+
+
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .type_message {
+        font-size: 0.8rem;
+        padding: 15px 8px;
+        width: 70%;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .send_message {
+        font-size: 0.8rem;
+    }
+
+
+    .contact_container {
+        padding: 25px 15px 25px;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section {
+        padding: 10px 5px;
+    }
+
+    .contact_container ::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .receiver_chat .receiver_user_info {
+        padding: 8px;
+        width: 55%;
+    }
+
+    .contact_container .contact_chat .down_section .chating_section .sender_chat .sende_user_info {
+        padding: 8px;
+        width: 55%;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_img {
+        width: 40px;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .contact_container .contact_chat .down_section .chating_footer .smiley .smiley_inner {
+        font-size: 1rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .folder .folder_inner {
+        font-size: 1rem;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .type_message {
+        padding: 10px 6px;
+        width: 65%;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_img {
+        width: 32px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .send_message {
+        padding: 0px 8px;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box {
+        width: 75%;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .type_message {
+        width: 60%;
+    }
+
+    .contact_container .contact_chat .up_section .lister_info {
+        width: 85%;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_section .up_section .chat_time {
+        font-size: 0.6rem;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister {
+        padding: 10px 4px;
+    }
+
+    .contact_container {
+        padding: 25px 8px 25px;
+    }
+
+    .contact_container .contact_list .contact_list_inner .contact_lister .lister_img {
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width: 255px) {
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .type_message {
+        padding: 8px 6px;
+        width: 50%;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box {
+        width: 69%;
+    }
+
+    .contact_container .contact_chat .down_section .chating_footer .type_message_box .send_message {
+        padding: 0px 6px;
+    }
+}

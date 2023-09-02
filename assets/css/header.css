@@ -1,0 +1,666 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navigation {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 15dvh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.scroll_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 15dvh;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 95%;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* section 1 */
+.navbar .nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-bar .menu-btn {
+    font-size: 2rem;
+    color: #014b70;
+    margin-right: 2rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar .nav-bar .rnavbar {
+    border: 2px #014b70 solid;
+    position: fixed;
+    top: 15%;
+    display: none;
+    background-color: white;
+    width: 40%;
+    left: 0;
+    bottom: 0;
+    justify-content: end;
+}
+
+.navbar .nav-bar .rnavbar .rnavbar-inner {
+    width: 90%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.navbar .nav-bar .rnavbar .rnavbar-inner li {
+    list-style: none;
+    color: #014b70;
+    font-size: 1rem;
+    padding: 20px 0px 20px 10px;
+    border-bottom: solid 0.1rem #eee;
+}
+
+.navbar .nav-bar .rnavbar .rnavbar-inner .wallet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn {
+    font-size: 1.3rem;
+    border-radius: 4px;
+    padding: 6px 5px;
+    background: #014b70;
+    cursor: pointer;
+    color: white;
+    width: 96px;
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn .wallet-balance {
+    width: 66px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+
+.navbar .nav-bar .rnavbar .rnavbar-inner li a {
+    text-decoration: none;
+    color: #014b70;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/* Notifictions */
+
+.noti_wrapper {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    top: 15%;
+    left: 40%;
+    right: 20%;
+    color: black;
+}
+
+.noti_wrapper .noti_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #014b70;
+    padding: 20px 15px;
+}
+
+.noti_wrapper .noti_header .noti_icon {
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.noti_wrapper .noti_header .noti_result {
+    font-size: 1.3rem;
+}
+
+.noti_wrapper .noti_header .close_noti {
+    width: 9%;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.noti_wrapper .noti_mid {
+    height: 65dvh;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.noti_wrapper .noti_mid .no_noti {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.noti_wrapper .noti_mid .no_noti .no_noti_heading {
+    font-size: 1.6rem;
+    color: #014b70;
+}
+
+.noti_wrapper .noti_mid .notifiction {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.noti_wrapper .noti_mid .notifiction .notifiction_pic {
+    display: flex;
+    width: 15%;
+    align-items: start;
+    height: 100%;
+}
+
+.noti_wrapper .noti_mid .notifiction .notifiction_pic .notifiction_pic_inner {
+    width: 100%;
+}
+
+.noti_wrapper .noti_mid .notifiction .notifiction_info {
+    width: 65%;
+}
+
+.noti_wrapper .noti_mid .notifiction .notifiction_info .notification_name {
+    font-size: 1.3rem;
+}
+
+.noti_wrapper .noti_mid .notifiction .notifiction_info .notification_message {
+    font-size: 0.9rem;
+    padding-top: 10px;
+    word-break: break-all;
+}
+
+.noti_wrapper .noti_mid .notifiction .notifiction_info .notification_time {
+    padding-top: 15px;
+    font-size: 0.9rem;
+    text-align: end;
+}
+
+.noti_wrapper .noti_mid .notifiction .message_icon {
+    display: flex;
+    align-items: start;
+    width: 10%;
+    cursor: pointer;
+    height: 100%;
+    font-size: 2rem;
+    justify-content: center;
+    color: #014b70;
+    text-decoration: none;
+}
+
+.noti_wrapper .noti_footer {
+    border: 4px solid #014b70;
+}
+
+.navbar .nav-bar #logo {
+    display: flex;
+    width: 100%;
+    height: 12dvh;
+}
+
+.navbar .nav-bar #logo #logo-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* 2 section */
+.navbar .nav {
+    display: flex;
+    width: 70%;
+}
+
+.navbar .nav .nav-listing {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar .nav .nav-listing li {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav .nav-listing li a {
+    text-decoration: none;
+    color: #014b70;
+    font-size: 1.3rem;
+}
+
+.navbar .nav .nav-listing .searching-bar {
+    display: flex;
+    width: 90%;
+}
+
+.navbar .nav .nav-listing .searching-bar #search-bar {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 10px 0px 0px 10px;
+    width: 91%;
+    border: 1px solid #014b70;
+}
+
+.navbar .nav .nav-listing .searching-bar .search-icon {
+    background-color: black;
+    padding: 0px 20px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar .nav .nav-listing li .user-pic {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .nav .nav-listing li a .user-pic-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.alert {
+    padding: 15px 18px;
+    font-size: 1.3rem;
+}
+
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+}
+
+
+/* Media Querys */
+
+@media only screen and (max-width: 1280px) {
+    .navbar .nav {
+        width: 60%;
+    }
+
+    .navbar .nav .nav-listing .searching-bar {
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .nav-bar #logo {
+        height: 10dvh;
+    }
+
+    .navigation {
+        height: 13dvh;
+    }
+    .scroll_nav { 
+        height: 13dvh;
+    }
+
+    .alert {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn {
+        font-size: 1rem;
+        margin-right: 15px;
+        width: 80px;
+
+    }
+
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn .wallet-balance {
+        font-size: 0.9rem;
+        padding-left: 7px;
+        width: 60px;
+    }
+
+    .navbar .nav-bar .rnavbar .rnavbar-inner li a {
+        font-size: 1rem;
+    }
+
+    .navbar .nav-bar .menu-btn {
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav .nav-listing li .user-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar .nav .nav-listing .searching-bar #search-bar {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    .navbar .nav .nav-listing .searching-bar .search-icon {
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav {
+        width: 55%;
+    }
+
+    .navbar .nav-bar .rnavbar {
+        top: 13%;
+        width: 45%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .noti_wrapper .noti_header .noti_icon {
+        font-size: 1.3rem;
+    }
+    
+    .noti_wrapper .noti_header .noti_result {
+        font-size: 1rem;
+    }
+    
+    .noti_wrapper .noti_header .close_noti {
+        font-size: 1.3rem;
+    }
+    
+    
+    .noti_wrapper .noti_mid .no_noti .no_noti_heading {
+        font-size: 1.3rem;
+    }
+    .noti_wrapper .noti_mid .notifiction .notifiction_info .notification_name {
+        font-size: 1rem;
+    }
+    
+    .noti_wrapper .noti_mid .notifiction .notifiction_info .notification_message {
+        font-size: 0.8rem;
+    }
+    
+    .noti_wrapper .noti_mid .notifiction .notifiction_info .notification_time {
+        font-size: 0.8rem;
+    }
+    .noti_wrapper .noti_mid .notifiction .message_icon {
+        font-size: 1.5rem;
+    }
+
+
+    .noti_wrapper {
+        top: 13%;
+        left: 45%;
+        right: 12%;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .navbar .nav-bar .rnavbar {
+        width: 50%;
+    }
+
+    .noti_wrapper {
+        top: 13%;
+        left: 50%;
+        right: 3%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* NavBar */
+    .navbar .nav-bar #logo {
+        height: 9dvh;
+    }
+
+    .navigation {
+        height: 12dvh;
+    }
+    .scroll_nav {
+        height: 12dvh;
+    }
+
+    .alert {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav-bar .rnavbar .rnavbar-inner li a {
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn {
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav-bar .menu-btn {
+        font-size: 1.3rem;
+    }
+
+    .navbar .nav .nav-listing .searching-bar #search-bar {
+        padding: 6px 5px;
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav .nav-listing .searching-bar .search-icon {
+        padding: 0px 12px;
+    }
+
+    .navbar .nav .nav-listing .searching-bar {
+        width: 70%;
+    }
+
+    .navbar .nav {
+        width: 50%;
+    }
+
+    .navbar .nav-bar .menu-btn {
+        margin-right: 1.1rem;
+    }
+
+    .navbar .nav .nav-listing li .user-pic {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn .wallet-balance {
+        font-size: 0.8rem;
+        padding-left: 7px;
+        width: 47px;
+    }
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn {
+        margin-right: 9px;
+        width: 71px;
+    }
+    .navbar .nav-bar .rnavbar {
+        width: 60%;
+        top: 12%;
+    }
+
+
+
+
+
+
+
+    
+
+
+    .noti_wrapper .noti_header .noti_icon {
+        font-size: 1rem;
+    }
+    
+    .noti_wrapper .noti_header .noti_result {
+        font-size: 0.9rem;
+    }
+    
+    .noti_wrapper .noti_header .close_noti {
+        font-size: 1rem;
+    }
+    
+    
+    .noti_wrapper .noti_mid .no_noti .no_noti_heading {
+        font-size: 1rem;
+    }
+    .noti_wrapper .noti_mid .notifiction .notifiction_info .notification_name {
+        font-size: 0.9rem;
+    }
+    
+    .noti_wrapper .noti_mid .notifiction .notifiction_info .notification_message {
+        font-size: 0.7rem;
+    }
+    
+    .noti_wrapper .noti_mid .notifiction .notifiction_info .notification_time {
+        font-size: 0.7rem;
+    }
+    .noti_wrapper .noti_mid .notifiction .message_icon {
+        font-size: 1.3rem;
+    }
+
+    .noti_wrapper {
+        top: 22%;
+        left: 15%;
+        right: 15%;
+    }
+    .noti_wrapper .noti_mid {
+        height: 46dvh;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .navbar .nav .nav-listing .searching-bar .search-icon {
+        padding: 0px 10px;
+        font-size: 0.8rem;
+    }
+
+    .navbar .nav {
+        width: 40%;
+    }
+
+    .navbar .nav .nav-listing li .user-pic {
+        width: 25px;
+        height: 25px;
+    }
+    .navbar .nav-bar .rnavbar .rnavbar-inner {
+        width: 94%;
+    }
+    .navbar .nav-bar .rnavbar {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar .nav-bar #logo {
+        height: 6dvh;
+    }
+
+    .navigation {
+        height: 10dvh;
+    }
+    .scroll_nav { 
+        height: 10dvh;
+    }
+
+    .navbar .nav-bar .menu-btn {
+        font-size: 1rem;
+        margin-right: 0.7rem;
+    }
+
+    .navbar .nav .nav-listing .searching-bar #search-bar {
+        font-size: 0.7rem;
+        padding: 4px 3px;
+    }
+
+    .navbar .nav .nav-listing .searching-bar .search-icon {
+        font-size: 0.7rem;
+        padding: 0px 7px;
+    }
+
+    .navbar .nav .nav-listing li .user-pic {
+        width: 20px;
+        height: 20px;
+    }
+    .navbar .nav-bar .rnavbar .rnavbar-inner li a {
+        font-size: 0.8rem;
+        padding-left: 10px;
+    }
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn {
+        font-size: 0.8rem;
+        margin-right: 4px;
+        width: 70px;
+    }
+    .navbar .nav-bar .rnavbar {
+        top: 10%;
+        width: 80%;
+    }
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn .wallet-balance {
+        font-size: 0.7rem;
+        padding-left: 7px;
+        width: 47px;
+    }
+    .noti_wrapper {
+        top: 22%;
+        left: 8%;
+        right: 8%;
+    }
+    
+}
+
+@media only screen and (max-width: 230px) {
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn {
+        width: 65px;
+    }
+    .navbar .nav-bar .rnavbar .rnavbar-inner .wallet .wallet-btn .wallet-balance {
+        width: 42px;
+        padding-left: 4px;
+
+    }
+    .navbar .nav-bar .rnavbar .rnavbar-inner {
+        width: 96%;
+    }
+}
